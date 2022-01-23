@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bookdetails"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/lay_c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/c1"
+            android:id="@+id/back">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/search">
+
+            </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/lay_c1"
+        android:id="@+id/lay_c2"
+        android:background="#A0D0D8"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_c2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_c2"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="320dp"
+        android:background="@drawable/c5"
+        android:layout_below="@id/lay_c2"
+        android:layout_margin="20dp"
+        android:gravity="bottom"
+        android:id="@+id/lay_c4"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/Light_blue">
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play Trail"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fira_sans_semibold">
+
+            </TextView></LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="|"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fira_sans_semibold"></TextView>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/playnow">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play Now"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/fira_sans_semibold">
+
+                </TextView></LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lay_c5"
+        android:layout_below="@id/lay_c4"
+        android:layout_margin="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favo"
+            android:layout_gravity="end"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/half_black"
+            android:text="Educated"
+            android:fontFamily="@font/fira_sans_semibold">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Written by:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Tara Westover"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Narrated by:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Jaanish Ali"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   23 hrs 30 mins"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Released on:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   22 Nov 20"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   English"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publisher:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Boston Globe"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Category1,category2"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ratings:"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans_semibold"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   4.9(out of 5)"
+                android:textColor="@color/half_black"
+                android:fontFamily="@font/fira_sans"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/light_blue_bg2"
+                    android:layout_marginRight="80dp"
+                    android:gravity="center">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/c2"
+
+                    ></ImageView>
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/light_blue_bg2"
+                    android:gravity="center">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/c3"
+                    ></ImageView>
+            </LinearLayout>
+
+            </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publisher's Summary"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/half_black"
+            android:fontFamily="@font/fira_sans_semibold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tara Westover is an American author living in the UK. Born in Idaho to a father opposed to public education, she never attended school. She spent her days working in her father's junkyard or stewing herbs for her mother, a self-taught herbalist and midwife. She was seventeen the first time she set foot in a classroom, and after that first taste, she pursued learning for a decade. She graduated magna cum laude from Brigham Young University in 2008 and was subsequently awarded a Gates Cambridge Scholarship. She earned an MPhil from Trinity College, Cambridge in 2009, and in 2010 was a visiting fellow at Harvard University. She returned to Cambridge, where she was awarded a PhD in history in 2014."
+            android:layout_margin="15dp"
+            android:textColor="@color/half_black"
+            android:fontFamily="@font/fira_sans"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/half_black"
+                    android:text="See More lke this"
+                    android:fontFamily="@font/fira_sans_semibold"
+                    android:layout_margin="15dp">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_margin="20dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/c4"
+                    android:layout_gravity="end">
+
+                </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay3_1"
+                android:layout_below="@id/lay2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay3"
+                    android:layout_below="@id/lay2"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/books"
+                        android:layout_below="@id/lay2"
+                        android:layout_margin="10dp">
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/c6"></ImageView>
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/c7"></ImageView>
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/book10"></ImageView>
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/book3"></ImageView>
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/book4"></ImageView>
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="160dp"
+                            android:src="@drawable/book1"></ImageView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/bookname"
+                        android:layout_below="@+id/books">
+
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="The Courtesan's Pawn\nby Kingsley Slater"
+                            android:textColor="@color/half_black"
+                            android:textStyle="bold"></TextView>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:textColor="@color/half_black"
+                            android:layout_height="wrap_content"
+                            android:text="Beyond The Edge\nby Jasmine Doe"
+                            android:fontFamily="@font/fira_sans"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:textColor="@color/half_black"
+                            android:layout_height="wrap_content"
+                            android:text="Spirit's voice\nby Johnathan Smith"
+                            android:fontFamily="@font/fira_sans"
+                            android:textStyle="bold"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fira_sans"
+                            android:text="City on The Edge "
+                            android:textStyle="bold"
+                            android:textColor="@color/half_black"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:layout_height="wrap_content"
+                            android:text="City on The Edge "
+                            android:textStyle="bold"
+                            android:textColor="@color/half_black"
+                            ></TextView>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:fontFamily="@font/fira_sans"
+                            android:layout_height="wrap_content"
+                            android:text="City on The Edge  "
+                            android:textStyle="bold"
+                            android:textColor="@color/half_black"
+                            ></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/star"
+                        >
+
+                        <RatingBar
+                            style="@style/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:numStars="5"
+                            android:rating="2.5"
+                            android:stepSize="1.5"
+                            tools:ignore="SpeakableTextPresentCheck"></RatingBar>
+
+                        <RatingBar
+                            style="@style/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="35dp"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:stepSize="2.5"
+                            tools:ignore="SpeakableTextPresentCheck"></RatingBar>
+
+                        <RatingBar
+                            style="@style/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:numStars="5"
+                            android:rating="2.5"
+                            android:stepSize="1.5"
+                            tools:ignore="SpeakableTextPresentCheck"></RatingBar>
+
+                        <RatingBar
+                            style="@style/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:stepSize="2.5"
+                            tools:ignore="SpeakableTextPresentCheck"></RatingBar>
+
+                        <RatingBar
+                            style="@style/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:numStars="5"
+                            android:rating="2.5"
+                            android:stepSize="1.5"
+                            tools:ignore="SpeakableTextPresentCheck"></RatingBar>
+
+                        <RatingBar
+                            style="@style/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:numStars="5"
+                            android:rating="3.5"
+                            android:stepSize="2.5"
+                            tools:ignore="SpeakableTextPresentCheck"></RatingBar>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+</LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>
