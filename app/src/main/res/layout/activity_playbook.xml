@@ -15,9 +15,9 @@
         android:id="@+id/pg2_lay1">
 
         <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/pg22"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_v8"
             android:layout_margin="20dp"
             android:id="@+id/back1"></ImageView>
         <LinearLayout
@@ -28,18 +28,22 @@
             android:gravity="end">
 
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/pg20"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_v5"
                 android:layout_marginRight="25dp"></ImageView>
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:src="@drawable/pg21"></ImageView>
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_v6"></ImageView>
         </LinearLayout>
     </LinearLayout>
 
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/pg2_lay1"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,19 +89,47 @@
 
         </TextView>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pg23">
 
-        </ImageView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/p1"
+                android:progressBackgroundTint="@color/half_black"
+                android:progressTint="#DD1616"
+                android:layout_below="@id/lay5"
+                android:layout_marginLeft="5dp"></ProgressBar></LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2:76:01"
+
                 android:textColor="@color/half_black"
                 android:fontFamily="@font/fira_sans_semibold">
 
@@ -106,14 +138,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="5:54:30"
+                android:text="2:76:01"
+                android:gravity="end"
+
                 android:textColor="@color/half_black"
-                android:fontFamily="@font/fira_sans_semibold"
-                android:gravity="end">
+                android:fontFamily="@font/fira_sans_semibold">
 
             </TextView>
-
         </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,21 +175,22 @@
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/next">
+                android:padding="4dp"
+                android:src="@drawable/ic_v11">
 
             </ImageView>
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:src="@drawable/pg26"></ImageView>
+                android:layout_height="23dp"
+                android:src="@drawable/ic_v3"></ImageView>
         </LinearLayout>
 
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginRight="40dp"
-            android:src="@drawable/pg24">
+            android:src="@drawable/ic_v17">
 
         </ImageView>
 
@@ -168,15 +202,16 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:src="@drawable/pg25">
+                android:layout_height="23dp"
+                android:src="@drawable/ic_v7">
 
             </ImageView>
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/next1">
+                android:padding="4dp"
+                android:src="@drawable/ic_v14">
 
             </ImageView>
         </LinearLayout>
@@ -187,79 +222,81 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
         android:layout_below="@id/pg2_lay4"
         android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
 
         >
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/pg27"
-            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_v19">
 
-        </ImageView>
+            </ImageView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans_semibold"
                 android:text="1.5x"
-                android:textColor="@color/Light_blue"
-                android:fontFamily="@font/fira_sans_semibold">
+                android:textColor="@color/Light_blue">
 
             </TextView>
 
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-       android:gravity="center"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/pg28"
-            ></ImageView>
-        <TextView
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_v18"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans_semibold"
+                android:text="Chapters"
+                android:textColor="@color/Light_blue"></TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/Light_blue"
-            android:fontFamily="@font/fira_sans_semibold"
-            android:text="Chapters"></TextView>
+            android:orientation="horizontal">
 
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_v21">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fira_sans_semibold"
+                android:text="Add Fav"
+                android:textColor="@color/Light_blue"></TextView>
 
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/favo"
-            >
+        </LinearLayout>
 
-        </ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/Light_blue"
-            android:fontFamily="@font/fira_sans_semibold"
-            android:text="Add Fav"></TextView>
-
-
-    </LinearLayout>
-
-    </LinearLayout>
+    </LinearLayout></LinearLayout>
 
 
 
